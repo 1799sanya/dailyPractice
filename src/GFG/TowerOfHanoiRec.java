@@ -20,12 +20,12 @@ public class TowerOfHanoiRec {
         if(n==1){
             return 1;
         }
-        return (towerOfHanoi(n-1, from, to, aux) + 1 +
-                towerOfHanoi(n-1, aux, from, to));
+        return (towerOfHanoi(n-1, from, aux, to) + 1 +
+                towerOfHanoi(n-1, aux, to, from));
     }
 
     public static void main(String args[]){
-        int n=4;
+        int n=5;
         TowerOfHanoiRec sol = new TowerOfHanoiRec();
         System.out.println(sol.towerOfHanoi(n,1,3,2));
     }
