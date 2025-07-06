@@ -10,7 +10,7 @@ public class TrailingZeroesInFactEff {
     }
 
     public static void main(String[] args){
-        int n=251;
+        int n=25;
         int res = trailingZeroes(n);
         System.out.println("No of trailing zeros in factorial of " + n + " is " + res);
     }
