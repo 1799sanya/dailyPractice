@@ -25,3 +25,6 @@ public class BinarySearchIterative {
         System.out.println(bSearch(arr,x));
     }
 }
+
+//time:O(logn)
+//space: O(1)
