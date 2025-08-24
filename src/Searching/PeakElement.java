@@ -27,3 +27,5 @@ public class PeakElement {
         System.out.println(getPeak(arr));
     }
 }
+
+//O(logn)
