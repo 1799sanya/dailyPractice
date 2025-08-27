@@ -1,0 +1,28 @@
+package GFG;
+
+//You are given the heights of consecutive buildings. You can move from the roof of a building to the roof of the next adjacent building. You need to find the maximum number of consecutive steps you can put forward such that you gain an increase in altitude with each step.
+//Examples:
+//Input: arr[] = [1, 2, 2, 3, 2]
+//Output: 1
+//Explanation: 1, 2, or 2, 3 are the only consecutive buildings with increasing heights thus maximum number of consecutive steps with an increase in gain in altitude would be 1 in both cases.
+
+public class RoofTop {
+    public static int maxStep(int arr[]) {
+        // Your code here
+        int n=arr.length;
+        int count=0;
+        int ans=0;
+        for(int i=0;i<n-1;i++){
+            if(arr[i+1]>arr[i]){
+                count++;
+                ans=Math.max(ans,count);
+            } else count=0;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args){
+        int[] arr = {1, 2, 8, 10, 10, 12, 19};
+        System.out.println(maxStep(arr));
+    }
+}
