@@ -24,3 +24,5 @@ public class SubArrayWith0Sum {
         System.out.println(is0SubArray(arr));
     }
 }
+//TIME: O(n)
+//HASHING + PREFIX SUM
