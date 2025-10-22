@@ -26,3 +26,6 @@ public class SubArraysWithSumK {
         System.out.println(countSubArrays(arr,k));
     }
 }
+
+//time: O(n)
+//SPACE: O(n)
